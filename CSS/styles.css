@@ -8,6 +8,11 @@
     background-color: var(--white);
 }
 
+h2{
+    text-align: center;
+    margin: 2rem;
+}
+
 
 /* ********** ROOT COLOURS ********** */
 :root{
@@ -138,13 +143,32 @@ header h1{
     padding: 5rem;
 }
 
+.certifications-container{
+    display: flex;
+    height: 200px;
+}
+
+#certifications h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.certificate-img{
+    height: 200px;
+    width: 250px;
+    margin-right: 20px;
+}
+
+.certificate-content{
+    margin-top: 2rem;
+}
 
 /* ********** EXTRACIRICULAR ********** */
-
+/* 
 #extracurricular{
     margin: 2rem;
     padding: 5rem;
-}
+} */
 
 /* ********** FOOTER ********** */
 
@@ -155,9 +179,10 @@ footer{
     /* justify-content: center;
     text-align: center;
     justify-items: center; */
+    /* background-color: var(--lightblue); */
 }
 
-footer h2{
+footer h3{
     margin-bottom: 20px;
 }
 
@@ -184,6 +209,10 @@ footer img{
     background-color:var(--colour-blue1) ;
     height: 30px;
     border: 1px solid;
+}
+.form label{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 
