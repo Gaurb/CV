@@ -5,7 +5,6 @@
     box-sizing: border-box;
     list-style: none;
     font-family: "Open Sans", sans-serif;
-    background-color: var(--white);
 }
 
 h2{
@@ -27,14 +26,35 @@ h2{
     --colour-blue4:#ADBBDA;
     --color-black:#000;
 }
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7*/
+
+:root{
+    
+--almost_white: #F7FFF7;
+--dark_gray : #343434;
+--blue_dark:#2F3061;
+--yellow:#FFE66D;
+--blue_light:#A1C6D7;
+
+}
+
+body{
+    color: var(--dark_gray);
+}
+
+a{
+    color: var(--yellow);
+}
 
 /* ********** HEADER STYLING ********** */
 
 header{
-    margin: 2 rem;
+    background: #2F3061;
     padding: 5rem;
-    color: var(--colour-blue1);
-    text-align: center;
+    text-align: center; 
+    color: var(--almost_white);
 }
 header h1{
     font-style: italic;
@@ -42,8 +62,8 @@ header h1{
 
 /* ********** FEATURE PROJECTS ********** */
 
-#projects{
-    margin: 2rem;
+.projects{
+    background: var(--almost_white);
     padding: 5rem;
     color: var(--colour-blue1);
     text-align: center;
@@ -75,11 +95,11 @@ header h1{
 
 /* ********** EDUCATION ********** */
 
-#edu{
-    margin: 2rem;
+.edu{
     padding: 5rem;
     text-align: center;
     justify-items: center;
+    background-color: var(--blue_light);
 }
 
 .edu-items{
@@ -173,17 +193,18 @@ header h1{
 /* ********** FOOTER ********** */
 
 footer{
-    margin: 2rem;
     padding: 2rem;
     display: flex;
+
     /* justify-content: center;
     text-align: center;
     justify-items: center; */
-    /* background-color: var(--lightblue); */
+    background-color: var(--dark_gray);
 }
 
 footer h3{
     margin-bottom: 20px;
+    color: var(--almost_white);
 }
 
 footer svg{
@@ -196,6 +217,12 @@ footer img{
     height: 20px;
     width: 20px;
     margin: 5px;
+}
+.form{
+    background: var(--colour-blue3);
+    padding: 20px;
+    border-radius: 20px;
+    color: var(--almost_white);
 }
 
 .form input {
